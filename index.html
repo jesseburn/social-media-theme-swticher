@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Social Media Dashboard</title>
+  <meta name="description" content="social media dashboard">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="styles/output.css" type="text/css" rel="stylesheet" />
+</head>
+<style>
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .instagramcard {
+    background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+  }
+</style>
+
+<body class="w-full text-gray-900 bg-white dark:bg-darkTheme-100">
+  <header class="flex-col justify-center p-6 sm:pb-0 sm:pt-4 sm:px-40 sm:w-full dark:bg-darkTheme-200">
+    <div class="flex flex-row items-baseline justify-between w-full">
+      <h1 class="text-xl font-bold sm:text-2xl dark:text-white">Social Media Dashboard</h1>
+      <button class="bg-gray-100 text-lg w-7 rounded h-7 sm:pl-1.5" id="switchTheme">
+        <i class="fas fa-moon"></i>
+        <!-- <i class="hidden dark:flex far fa-sun"></i> -->
+      </button>
+    </div>
+    <h2 class="text-sm font-bold text-gray-500 sm:pt-0 sm:mt-0">Total Follower: 23,004</h2>
+    <div class="flex flex-col justify-between mt-8 sm:flex-row">
+      <div
+        class="flex flex-col items-center justify-center py-3 bg-gray-100 rounded cursor-pointer dark:bg-darkTheme-300 dark:hover:bg-darkTheme-500 hover:bg-gray-200 sm:h-48 sm:w-56"
+        style="border-top:3px solid hsl(203, 89%, 53%);">
+        <div class="flex flex-row">
+          <img src="./images/icon-facebook.svg" aria-label="icon-facebook" alt="icon-facebook"
+            class="object-contain object-center">
+          <p class="ml-2 text-sm font-bold dark:text-gray-500">@nathanf</p>
+        </div>
+        <p class="flex flex-col"><span class="mt-3 text-5xl font-black dark:text-white">1987</span><span
+            class="text-sm tracking-widest text-center text-gray-500">FOLLOWERS</span>
+          <span class="flex flex-row justify-center mt-3 text-xs font-bold text-green-500"><img
+              src="./images/icon-up.svg" aria-label="up arrow" alt="up"
+              class="object-contain object-center mr-1 sm:w-4">12 Today</span>
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center py-3 mt-5 bg-gray-100 rounded cursor-pointer sm:mt-0 dark:bg-darkTheme-300 dark:hover:bg-darkTheme-500 hover:bg-gray-200 sm:h-48 sm:w-56"
+        style="border-top:3px solid hsl(195, 100%, 50%);">
+        <div class="flex flex-row">
+          <img src="./images/icon-twitter.svg" aria-label="icon-twitter" alt="icon-twitter"
+            class="object-contain object-center">
+          <p class="ml-2 text-sm font-bold dark:text-gray-500">@nathanf</p>
+        </div>
+        <p class="flex flex-col"><span class="mt-3 text-5xl font-black dark:text-white">1044</span><span
+            class="text-sm tracking-widest text-center text-gray-500">FOLLOWERS</span>
+          <span class="flex flex-row justify-center mt-3 text-xs font-bold text-green-500"><img
+              src="./images/icon-up.svg" aria-label="up arrow" alt="up"
+              class="object-contain object-center mr-1 sm:w-4">99 Today</span>
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center py-3 mt-5 bg-gray-100 rounded cursor-pointer sm:mt-0 dark:bg-darkTheme-300 dark:hover:bg-darkTheme-500 hover:bg-gray-200 sm:h-48 sm:w-56 instagramcard">
+        <div class="flex flex-row">
+          <img src="./images/icon-instagram.svg" aria-label="icon-instagram" alt="icon-instagram"
+            class="object-contain object-center">
+          <p class="ml-2 text-sm font-bold dark:text-gray-500">@realnathanf</p>
+        </div>
+        <p class="flex flex-col w-full"><span
+            class="mt-3 text-5xl font-black text-center dark:text-white">11K</span><span
+            class="text-sm tracking-widest text-center text-gray-500">FOLLOWERS</span>
+          <span class="flex flex-row justify-center mt-3 text-xs font-bold text-green-500"><img
+              src="./images/icon-up.svg" aria-label="up arrow" alt="up"
+              class="object-contain object-center mr-1 sm:w-4">1099 Today</span>
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center py-3 mt-5 bg-gray-100 rounded cursor-pointer sm:mt-0 dark:bg-darkTheme-300 dark:hover:bg-darkTheme-500 hover:bg-gray-200 sm:h-48 sm:w-56"
+        style="border-top:3px solid hsl(348, 97%, 39%);">
+        <div class="flex flex-row">
+          <img src="./images/icon-youtube.svg" aria-label="icon-youtube" alt="icon-youtube"
+            class="object-contain object-center">
+          <p class="ml-2 text-sm font-bold dark:text-gray-500">Nathan F.</p>
+        </div>
+        <p class="flex flex-col"><span class="mt-3 text-5xl font-black dark:text-white">8239</span><span
+            class="text-sm tracking-widest text-center text-gray-500">FOLLOWERS</span>
+          <span class="flex flex-row justify-center mt-3 text-xs font-bold text-red-700"><img
+              src="./images/icon-down.svg" aria-label="down arrow" alt="down"
+              class="object-contain object-center mr-1 sm:w-4">144 Today</span>
+        </p>
+      </div>
+    </div>
+  </header>
+  <section class="flex flex-col justify-center w-full p-6 sm:pb-6 sm:px-40 sm:mt-8">
+    <h2 class="mb-4 font-bold text-gray-500 sm:text-xl sm:mb-5">Overview - Today</h2>
+    <div class="flex flex-col justify-between sm:flex-row sm:mb-5">
+      <div
+        class="flex flex-col items-center justify-center py-3 bg-gray-100 rounded cursor-pointer dark:bg-darkTheme-300 dark:hover:bg-darkTheme-500 hover:bg-gray-200 sm:h-32 sm:w-56">
+        <div class="flex flex-row-reverse justify-between w-full px-5">
+          <img src="./images/icon-facebook.svg" aria-label="icon-facebook" alt="icon-facebook"
+            class="object-contain object-center">
+          <p class="ml-2 text-sm font-bold text-gray-500 text-bold">Page Views</p>
+        </div>
+        <p class="flex flex-row items-baseline justify-between w-full pr-5 pl-7 sm:mt-3"><span
+            class="mt-3 text-3xl font-black dark:text-white">87</span>
+          <span class="flex flex-row justify-center mt-3 text-xs font-bold text-green-500"><img
+              src="./images/icon-up.svg" aria-label="up arrow" alt="up"
+              class="object-contain object-center mr-1 sm:w-4">3%</span>
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center py-3 mt-5 bg-gray-100 rounded cursor-pointer sm:mt-0 dark:bg-darkTheme-300 dark:hover:bg-darkTheme-500 hover:bg-gray-200 sm:h-32 sm:w-56">
+        <div class="flex flex-row-reverse justify-between w-full px-5">
+          <img src="./images/icon-facebook.svg" aria-label="icon-facebook" alt="icon-facebook"
+            class="object-contain object-center">
+          <p class="ml-2 text-sm font-bold text-gray-500 text-bold">Likes</p>
+        </div>
+        <p class="flex flex-row items-baseline justify-between w-full pr-5 pl-7 sm:mt-3"><span
+            class="mt-3 text-3xl font-black dark:text-white">52</span>
+          <span class="flex flex-row justify-center mt-3 text-xs font-bold text-red-700"><img
+              src="./images/icon-down.svg" aria-label="down arrow" alt="down"
+              class="object-contain object-center mr-1 sm:w-4">2%</span>
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center py-3 mt-5 bg-gray-100 rounded cursor-pointer sm:mt-0 dark:bg-darkTheme-300 dark:hover:bg-darkTheme-500 hover:bg-gray-200 sm:h-32 sm:w-56">
+        <div class="flex flex-row-reverse justify-between w-full px-5">
+          <img src="./images/icon-instagram.svg" aria-label="icon-instagram" alt="icon-instagram"
+            class="object-contain object-center">
+          <p class="ml-2 text-sm font-bold text-gray-500 text-bold">Likes</p>
+        </div>
+        <p class="flex flex-row items-baseline justify-between w-full pr-5 pl-7 sm:mt-3"><span
+            class="mt-3 text-3xl font-black dark:text-white">5462</span>
+          <span class="flex flex-row justify-center mt-3 text-xs font-bold text-green-500"><img
+              src="./images/icon-up.svg" aria-label="up arrow" alt="up"
+              class="object-contain object-center mr-1 sm:w-4">2257%</span>
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center py-3 mt-5 bg-gray-100 rounded cursor-pointer sm:mt-0 dark:bg-darkTheme-300 dark:hover:bg-darkTheme-500 hover:bg-gray-200 sm:h-32 sm:w-56">
+        <div class="flex flex-row-reverse justify-between w-full px-5">
+          <img src="./images/icon-instagram.svg" aria-label="icon-instagram" alt="icon-instagram"
+            class="object-contain object-center">
+          <p class="ml-2 text-sm font-bold text-gray-500 text-bold">Profile Views</p>
+        </div>
+        <p class="flex flex-row items-baseline justify-between w-full pr-5 pl-7 sm:mt-3"><span
+            class="mt-3 text-3xl font-black dark:text-white">52K</span>
+          <span class="flex flex-row justify-center mt-3 text-xs font-bold text-green-500"><img
+              src="./images/icon-up.svg" aria-label="up arrow" alt="up"
+              class="object-contain object-center mr-1 sm:w-4">1375%</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-between sm:flex-row">
+      <div
+        class="flex flex-col items-center justify-center py-3 mt-5 bg-gray-100 rounded cursor-pointer sm:mt-0 dark:bg-darkTheme-300 dark:hover:bg-darkTheme-500 hover:bg-gray-200 sm:h-32 sm:w-56">
+        <div class="flex flex-row-reverse justify-between w-full px-5">
+          <img src="./images/icon-twitter.svg" aria-label="icon-twitter" alt="icon-twitter"
+            class="object-contain object-center">
+          <p class="ml-2 text-sm font-bold text-gray-500 text-bold">Retweets</p>
+        </div>
+        <p class="flex flex-row items-baseline justify-between w-full pr-5 pl-7 sm:mt-3"><span
+            class="mt-3 text-3xl font-black dark:text-white">117</span>
+          <span class="flex flex-row justify-center mt-3 text-xs font-bold text-green-500"><img
+              src="./images/icon-up.svg" aria-label="up arrow" alt="up"
+              class="object-contain object-center mr-1 sm:w-4">303%</span>
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center py-3 mt-5 bg-gray-100 rounded cursor-pointer sm:mt-0 dark:bg-darkTheme-300 dark:hover:bg-darkTheme-500 hover:bg-gray-200 sm:h-32 sm:w-56">
+        <div class="flex flex-row-reverse justify-between w-full px-5">
+          <img src="./images/icon-twitter.svg" aria-label="icon-twitter" alt="icon-twitter"
+            class="object-contain object-center">
+          <p class="ml-2 text-sm font-bold text-gray-500 text-bold">Likes</p>
+        </div>
+        <p class="flex flex-row items-baseline justify-between w-full pr-5 pl-7 sm:mt-3"><span
+            class="mt-3 text-3xl font-black dark:text-white">507</span>
+          <span class="flex flex-row justify-center mt-3 text-xs font-bold text-green-500"><img
+              src="./images/icon-up.svg" aria-label="up arrow" alt="down"
+              class="object-contain object-center mr-1 sm:w-4">553%</span>
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center py-3 mt-5 bg-gray-100 rounded cursor-pointer sm:mt-0 dark:bg-darkTheme-300 dark:hover:bg-darkTheme-500 hover:bg-gray-200 sm:h-32 sm:w-56">
+        <div class="flex flex-row-reverse justify-between w-full px-5">
+          <img src="./images/icon-youtube.svg" aria-label="icon-youtube" alt="icon-youtube"
+            class="object-contain object-center">
+          <p class="ml-2 text-sm font-bold text-gray-500 text-bold">Likes</p>
+        </div>
+        <p class="flex flex-row items-baseline justify-between w-full pr-5 pl-7 sm:mt-3"><span
+            class="mt-3 text-3xl font-black dark:text-white">107</span>
+          <span class="flex flex-row justify-center mt-3 text-xs font-bold text-red-700"><img
+              src="./images/icon-down.svg" aria-label="down arrow" alt="down"
+              class="object-contain object-center mr-1 sm:w-4">19%</span>
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center py-3 mt-5 bg-gray-100 rounded cursor-pointer sm:mt-0 dark:bg-darkTheme-300 dark:hover:bg-darkTheme-500 hover:bg-gray-200 sm:h-32 sm:w-56">
+        <div class="flex flex-row-reverse justify-between w-full px-5">
+          <img src="./images/icon-youtube.svg" aria-label="icon-youtube" alt="icon-youtube"
+            class="object-contain object-center">
+          <p class="ml-2 text-sm font-bold text-gray-500 text-bold">Total Views</p>
+        </div>
+        <p class="flex flex-row items-baseline justify-between w-full pr-5 pl-7 sm:mt-3"><span
+            class="mt-3 text-3xl font-black dark:text-white">1407</span>
+          <span class="flex flex-row justify-center mt-3 text-xs font-bold text-red-700"><img
+              src="./images/icon-down.svg" aria-label="down arrow" alt="down"
+              class="object-contain object-center mr-1 sm:w-4">12%</span>
+        </p>
+      </div>
+    </div>
+  </section>
+  <script>
+    $(document).ready(function () {
+      //dark theme & light theme switcher
+      $("#switchTheme").click(function () {
+        let htmlClasses = document.querySelector('html').classList;
+
+        if (localStorage.theme == 'dark') {
+
+          htmlClasses.remove('dark');
+
+          localStorage.removeItem('theme')
+
+        } else {
+
+          htmlClasses.add('dark');
+
+          localStorage.theme = 'dark';
+
+        }
+
+      });
+      //local storage for theme switcher
+      if (localStorage.theme === 'dark' || (!'theme' in localStorage && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+
+        document.querySelector('html').classList.add('dark')
+
+      } else if (localStorage.theme === 'dark') {
+
+        document.querySelector('html').classList.add('dark')
+
+      }
+    });
+  </script>
+</body>
+
+</html>
